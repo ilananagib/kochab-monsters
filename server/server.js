@@ -5,7 +5,7 @@ const kochabMonsters = require('./module/monsters');
 
 app.use(express.static('server/public'));
 
-app.get('./monsters', (req, res) => {
+app.get('/monsters', (req, res) => {
     res.send(kochabMonsters);
 });
 
